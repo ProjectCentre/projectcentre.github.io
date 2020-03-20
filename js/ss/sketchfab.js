@@ -1,7 +1,7 @@
 // Sketchfab.js//
 
 var iframe1 = document.getElementById( 'api-frame1' );
-    var uid1 = '7w7pAfrCfjovwykkEeRFLGw5SXS';
+    var uid1 = '85a27e733b5744a6bdcb7e5645ff4341';
 
   var iframe2 = document.getElementById( 'api-frame2' );
     var uid2 = '784aaac7e98942ca86f7a593604c3d83';      
@@ -20,7 +20,10 @@ var iframe1 = document.getElementById( 'api-frame1' );
 //Client1//
     client1.init( uid1, {
         success: function onSuccess( api ){
-            api.start();
+            api.start(function() {
+                document.getElementById('btn2').addEventListener('click', function() {
+                    api.gotoAnnotation(2, { preventCameraAnimation: false, preventCameraMove: false });
+                 });
             api.addEventListener( 'viewerready', function() {
                 // API is ready to use
                 // Insert your code here
@@ -30,7 +33,13 @@ var iframe1 = document.getElementById( 'api-frame1' );
         },
         error: function onError() {
             console.log( 'Viewer error' );
-        }
+        },
+        autostart: 1,
+        ui_general_controls: 0,
+        ui_inspector: 0,
+        ui_watermark_link: 0,
+        ui_infos: 0
+
     } );
 
       //Client2//
@@ -46,7 +55,13 @@ var iframe1 = document.getElementById( 'api-frame1' );
         },
         error: function onError() {
             console.log( 'Viewer error' );
-        }
+        },
+
+        autostart: 1,
+        ui_general_controls: 0,
+        ui_inspector: 0,
+        ui_watermark_link: 0,
+        ui_infos: 0
     } );
 
             //Client3//
@@ -62,5 +77,11 @@ var iframe1 = document.getElementById( 'api-frame1' );
         },
         error: function onError() {
             console.log( 'Viewer error' );
-        }
+        },
+
+        autostart: 1,
+        ui_general_controls: 0,
+        ui_inspector: 0,
+        ui_watermark_link: 0,
+        ui_infos: 0
     } );

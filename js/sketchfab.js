@@ -1,7 +1,7 @@
 // Sketchfab.js//
 
 var iframe1 = document.getElementById( 'api-frame1' );
-    var uid1 = '7w7pAfrCfjovwykkEeRFLGw5SXS';
+    var uid1 = '85a27e733b5744a6bdcb7e5645ff4341';
 
   var iframe2 = document.getElementById( 'api-frame2' );
     var uid2 = '784aaac7e98942ca86f7a593604c3d83';      
@@ -16,51 +16,62 @@ var iframe1 = document.getElementById( 'api-frame1' );
    
       // Alternatively, you can request a specific version.
     // var client = new Sketchfab( '1.7.1', iframe );
+var error1 = function onError() {
+            console.log( 'Viewer error' );
+        };
+
+var success1 = function(api1) {
+
+api1.start(function() {
+          document.getElementById('b1').addEventListener('click', function() {
+            api1.gotoAnnotation(0, { preventCameraAnimation: false, preventCameraMove:             false });
+        });
+
+        document.getElementById('b2').addEventListener('click', function() {
+            api1.gotoAnnotation(1, { preventCameraAnimation: false, preventCameraMove:           false });
+        });
+
+        document.getElementById('b3').addEventListener('click', function() {
+            api1.gotoAnnotation(2, { preventCameraAnimation: false, preventCameraMove:           false });
+        });
+
+        document.getElementById('b4').addEventListener('click', function() {
+            api1.gotoAnnotation(3, { preventCameraAnimation: false, preventCameraMove:           false });
+        });
+
+        document.getElementById('b5').addEventListener('click', function() {
+            api1.gotoAnnotation(4, { preventCameraAnimation: false, preventCameraMove:           false });
+        });
+
+        document.getElementById('b6').addEventListener('click', function() {
+            api1.gotoAnnotation(5, { preventCameraAnimation: false, preventCameraMove:           false });
+        });
+
+    });
+};
+
+
+
 
 //Client1//
     client1.init( uid1, {
-        success: function onSuccess( api ){
-            api.start();
-            api.addEventListener( 'viewerready', function() {
-                // API is ready to use
-                // Insert your code here
-                console.log( 'Viewer is ready' );
+        success: success1,
+        error: error1
 
-            } );
-        },
-        error: function onError() {
-            console.log( 'Viewer error' );
-        }
     } );
 
-      //Client2//
+//Client2//
     client2.init( uid2, {
-        success: function onSuccess( api ){
-            api.start();
-            api.addEventListener( 'viewerready', function() {
-                // API is ready to use
-                // Insert your code here
-                console.log( 'Viewer is ready' );
+        success: success2,
+        error: error1
 
-            } );
-        },
-        error: function onError() {
-            console.log( 'Viewer error' );
-        }
     } );
 
-            //Client3//
-    client3.init( uid3, {
-        success: function onSuccess( api ){
-            api.start();
-            api.addEventListener( 'viewerready', function() {
-                // API is ready to use
-                // Insert your code here
-                console.log( 'Viewer is ready' );
 
-            } );
-        },
-        error: function onError() {
-            console.log( 'Viewer error' );
-        }
+//Client3//
+    client1.init( uid3, {
+        success: success3,
+        error: error1
+
     } );
+
