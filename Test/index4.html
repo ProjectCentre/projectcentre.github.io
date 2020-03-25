@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3d City API example</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- JQuery Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- Sketchfab API -->
+    <script type="text/javascript" src="https://static.sketchfab.com/api/sketchfab-viewer-1.7.1.js"></script>
+   
+    
+  </head>
+
+  <body>
+
+
+
+<div class="col-md-3" id="accordion">
+
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Transport Planning
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+                <button class="btn-light btn-block" id="b1" href="#">Sustainable Transport Solutions</button>
+                <button class="btn-light btn-block" id="b2" href="#">Something Else</button>
+                <button class="btn-light btn-block" id="b3" href="#">Something else here</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          DesignWorks
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+                <button class="btn-light btn-block" id="b4" href="#">Public Realm</button>
+                <button class="btn-light btn-block" id="b5" href="#">Something Else</button>
+                <button class="btn-light btn-block" id="b6" href="#">Something else here</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Highways Engineering
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+                <button class="btn-light btn-block" id="b1" href="#">Highways stuff</button>
+                <button class="btn-light btn-block" id="b2" href="#">Something Else</button>
+                <button class="btn-light btn-block" id="b3" href="#">Something else here</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingFour">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Traffic Engineering
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+      <div class="card-body">
+                <button class="btn-light btn-block" id="b1" href="#">Traffic stuff</button>
+                <button class="btn-light btn-block" id="b2" href="#">Something Else</button>
+                <button class="btn-light btn-block" id="b3" href="#">Something else here</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingFive">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Parking
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+      <div class="card-body">
+                <button class="btn-light btn-block" id="b1" href="#">Parking stuff</button>
+                <button class="btn-light btn-block" id="b2" href="#">Something Else</button>
+                <button class="btn-light btn-block" id="b3" href="#">Something else here</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingSix">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          Flood Risk and Water Management
+        </button>
+      </h5>
+    </div>
+    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+      <div class="card-body">
+                <button class="btn-light btn-block" id="b1" href="#">Flood stuff</button>
+                <button class="btn-light btn-block" id="b2" href="#">Something Else</button>
+                <button class="btn-light btn-block" id="b3" href="#">Something else here</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingSeven">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          Engagement and Consultation
+        </button>
+      </h5>
+    </div>
+    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+      <div class="card-body">
+                <button class="btn-light btn-block" id="b1" href="#">Engagement stuff</button>
+                <button class="btn-light btn-block" id="b2" href="#">Something Else</button>
+                <button class="btn-light btn-block" id="b3" href="#">Something else here</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingSeven">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          Structural Engineering
+        </button>
+      </h5>
+    </div>
+    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+      <div class="card-body">
+                <button class="btn-light btn-block" id="b1" href="#">Structural stuff</button>
+                <button class="btn-light btn-block" id="b2" href="#">Something Else</button>
+                <button class="btn-light btn-block" id="b3" href="#">Something else here</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+ <!-- Local js -->
+    <script type="text/javascript" src="js/sketchfab.js"></script>
+    <script type="text/javascript" src="js/buttons.js"></script>
+
+  </body>
+
+</html>
