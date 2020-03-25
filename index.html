@@ -17,44 +17,61 @@
   </head>
 
   <body>
- <!-- Buttons -->
+ <!-- Buttons Top-->
+<div class="row m-2">
+  <div class="col-md-1"></div>
+  <div class="col-md-2">
+  <img class="img-fluid"src="images/nsl-logo.png" alt="NSL Logo">
+  </div>
+  <div class ="container-fluid col">
+  <h3 style="color: #262d61;"> Our Service Offer </h3>
+  <p style="color: #262d61;"> Click the menu items to interact with the 3d City</p>
+  </div>
+</div>
 
-    <div class="row">
-      <button class="btn btn-light bdesign col"> <h4>Design</h4></button>
-      <button class="btn btn-light bbuild col"> <h4>Build</h4></button>
-      <button class="btn btn-light benforce col"> <h4>Enforce</h4></button>
-    </div>
+<div class="row" style="height: 20px;"></div>
     
+ <!-- Whole Row -->
 <div class="row">
-    <div class="btn-group col design">
-        <button id="b1" class="btn btn-light col"> <p>Sustainable Transport Solutions</p></button>
-        <button id="b2" class="btn btn-light col"> <p>Public Realm Design</p></button>
-        <button id="b3" class="btn btn-light col"> <p>Flood Risk Management</p></button>
-        <button id="b4" class="btn btn-light col"> <p>Sustainable Neighbourhoods</p></button>
-        <button id="b5" class="btn btn-light col"> <p>Pedestrian Priority Spaces</p></button>
-        <button id="b6" class="btn btn-light col"> <p>Forest Management</p></button>
-    </div>
-</div>
- <!-- SketchFab Iframes -->
- <div class="row">  
-    <div class="col"></div>
-    
-    <div class="col-md-10">
-        <div class="container-fluid design embed-responsive embed-responsive-16by9">
-            <iframe src="" id="api-frame1" class="embed-responsive-item" allow="autoplay; vr" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <div class="col-md-1"></div>
+
+        <div class="col-md-3 overflow-auto d-none d-md-block" style="height: 500px;">
+          <button class="btn btn-light btn-block" id="b1"> <p>Business Processing Management</p></button>
+          <button class="btn btn-light btn-block" id="b2"> <p>Identity Documents Authentication</p></button>
+          <button class="btn btn-light btn-block" id="b3"> <p>Civil Parking Enforcement</p></button>
+          <button class="btn btn-light btn-block" id="b4"> <p>Street and Estate Management</p></button>
+          <button class="btn btn-light btn-block" id="b5"> <p>Taxi Management and Licensing</p></button>
+          <button class="btn btn-light btn-block" id="b6"> <p>Airports</p></button> 
+          <button class="btn btn-light btn-block" id="b7"> <p>Debt Enforcement</p></button>
+          <button class="btn btn-light btn-block" id="b8"> <p>Pollution Monitoring</p></button>
+          <button class="btn btn-light btn-block" id="b9"> <p>Workplace Parking Levies</p></button>
+          <button class="btn btn-light btn-block" id="b10"> <p>Toll Charges</p></button> 
+          <button class="btn btn-light btn-block" id="b11"> <p>Alternative Transport Options</p></button> 
         </div>
-    
-        <div class="container-fluid build d-none embed-responsive embed-responsive-16by9">
-            <iframe src="" id="api-frame2" class="embed-responsive-item" class="embed-responsive-item"  allow="autoplay; fullscreen; vr" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-         </div>
-     
-        <div class="container-fluid enforce d-none embed-responsive embed-responsive-16by9">
-             <iframe src="" id="api-frame3"  class="embed-responsive-item"  allow="autoplay; fullscreen; vr" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+     <!-- SketchFab Iframes -->
+     <div class="col-md-8">  
+        
+        <div class="col">
+            <div class="container-fluid design embed-responsive embed-responsive-16by9">
+                <iframe src="" id="api-frame1" class="embed-responsive-item" allow="autoplay; vr" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            </div>
+        
+            <div class="container-fluid build d-none embed-responsive embed-responsive-16by9">
+                <iframe src="" id="api-frame2" class="embed-responsive-item" class="embed-responsive-item"  allow="autoplay; fullscreen; vr" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+             </div>
+         
+            <div class="container-fluid enforce d-none embed-responsive embed-responsive-16by9">
+                 <iframe src="" id="api-frame3"  class="embed-responsive-item"  allow="autoplay; fullscreen; vr" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            </div>
         </div>
+
     </div>
 
-    <div class="col"></div>
+    <div class="col-md-1"></div>
+
 </div>
+
 
  <!-- Local js -->
     <script type="text/javascript" src="js/sketchfab.js"></script>

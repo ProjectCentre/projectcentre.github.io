@@ -1,7 +1,7 @@
 // Sketchfab.js//
 
 var iframe1 = document.getElementById( 'api-frame1' );
-    var uid1 = '85a27e733b5744a6bdcb7e5645ff4341';
+    var uid1 = 'b8033401498a41bb9409ee508f0f6817';
 
   var iframe2 = document.getElementById( 'api-frame2' );
     var uid2 = '784aaac7e98942ca86f7a593604c3d83';      
@@ -13,6 +13,15 @@ var iframe1 = document.getElementById( 'api-frame1' );
       var client1 = new Sketchfab( iframe1 );
       var client2 = new Sketchfab( iframe2 );
       var client3 = new Sketchfab( iframe3 );
+
+var noann = 11;
+
+
+  
+  var annotations = ["b1", "b2", "b3", "b4", "b5", "b6", "b7", "b8", "b9", "b10", "b11"];
+
+
+
    
       // Alternatively, you can request a specific version.
     // var client = new Sketchfab( '1.7.1', iframe );
@@ -47,6 +56,27 @@ api1.start(function() {
             api1.gotoAnnotation(5, { preventCameraAnimation: false, preventCameraMove:           false });
         });
 
+        document.getElementById('b7').addEventListener('click', function() {
+            api1.gotoAnnotation(6, { preventCameraAnimation: false, preventCameraMove:           false });
+        });
+
+                document.getElementById('b8').addEventListener('click', function() {
+            api1.gotoAnnotation(7, { preventCameraAnimation: false, preventCameraMove:           false });
+        });
+
+                document.getElementById('b9').addEventListener('click', function() {
+            api1.gotoAnnotation(8, { preventCameraAnimation: false, preventCameraMove:           false });
+        });
+
+                document.getElementById('b10').addEventListener('click', function() {
+            api1.gotoAnnotation(9, { preventCameraAnimation: false, preventCameraMove:           false });
+        });
+
+                document.getElementById('b11').addEventListener('click', function() {
+            api1.gotoAnnotation(10, { preventCameraAnimation: false, preventCameraMove:           false });
+        });
+
+
     });
 };
 
@@ -56,7 +86,13 @@ api1.start(function() {
 //Client1//
     client1.init( uid1, {
         success: success1,
-        error: error1
+        error: error1,
+        ui_general_controls: 0,
+        ui_settings: 0,
+        ui_inspector: 0,
+        ui_infos: 0,
+        ui_stop: 0,
+        ui_watermark_link: 0
 
     } );
 
@@ -64,6 +100,7 @@ api1.start(function() {
     client2.init( uid2, {
         success: success2,
         error: error1
+
 
     } );
 
