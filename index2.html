@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3d City API example</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- JQuery Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- Sketchfab API -->
+    <script type="text/javascript" src="https://static.sketchfab.com/api/sketchfab-viewer-1.7.1.js"></script>
+   
+    
+  </head>
+
+  <body>
+ <!-- Buttons Top-->
+<div class="row m-2" style="height: 100px;">
+  <div class="col-md-1"></div>
+  <div class="col-2 max-height-100">
+  <img class="img-fluid"src="images/MH-logo.jpg" alt="NSL Logo">
+  </div>
+  <div class="col-2 max-height-100">
+  <img class="img-fluid"src="images/nsl-logo.png" alt="NSL Logo">
+  </div>
+  <div class ="container-fluid col-xs-12 col-sm-6">
+  <h3 style="color: #262d61;"> Our Service Offer </h3>
+  <p style="color: #262d61;"> Click the menu items to interact with the 3d City</p>
+  </div>
+</div>
+
+<div class="row" style="height: 20px;"></div>
+    
+ <!-- Whole Row -->
+<div class="row">
+        <div class="col-md-1"></div>
+
+        <div class="col-md-3 overflow-auto d-none d-md-block" style="height: 500px;">
+          <button class="btn btn-light btn-block" id="b0"> <p>Business Processing Management</p></button>
+          <button class="btn btn-light btn-block" id="b1"> <p>Identity Documents Authentication</p></button>
+          <button class="btn btn-light btn-block" id="b2"> <p>Civil Parking Enforcement</p></button>
+          <button class="btn btn-light btn-block" id="b3"> <p>Street and Estate Management</p></button>
+          <button class="btn btn-light btn-block" id="b4"> <p>Taxi Management and Licensing</p></button>
+          <button class="btn btn-light btn-block" id="b5"> <p>Airports</p></button> 
+          <button class="btn btn-light btn-block" id="b6"> <p>Debt Enforcement</p></button>
+          <button class="btn btn-light btn-block" id="b7"> <p>Pollution Monitoring</p></button>
+          <button class="btn btn-light btn-block" id="b8"> <p>Workplace Parking Levies</p></button>
+          <button class="btn btn-light btn-block" id="b9"> <p>Toll Charges</p></button> 
+          <button class="btn btn-light btn-block" id="b10"> <p>Alternative Transport Options</p></button> 
+        </div>
+
+     <!-- SketchFab Iframes -->
+     <div class="col-md-8">  
+        
+        <div class="col">
+            <div class="container-fluid design embed-responsive embed-responsive-16by9">
+                <iframe src="" id="api-frame1" class="embed-responsive-item" allow="autoplay; vr" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            </div>
+        
+            <div class="container-fluid build d-none embed-responsive embed-responsive-16by9">
+                <iframe src="" id="api-frame2" class="embed-responsive-item" class="embed-responsive-item"  allow="autoplay; fullscreen; vr" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+             </div>
+         
+            <div class="container-fluid enforce d-none embed-responsive embed-responsive-16by9">
+                 <iframe src="" id="api-frame3"  class="embed-responsive-item"  allow="autoplay; fullscreen; vr" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-1"></div>
+
+</div>
+
+
+ <!-- Local js -->
+    <script type="text/javascript" src="js/sketchfab.js"></script>
+    <script type="text/javascript" src="js/buttons.js"></script>
+
+  </body>
+
+</html>
